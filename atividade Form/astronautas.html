@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro da Liga dos Astronautas</title>
+  </head>
+  <body>
+    <h2>Cadastro da Liga dos astronautas</h2>
+    <div name="">
+      <form>
+        <label for="n"><strong>Nome:</strong></label>
+        <input type="text" id="n" name="n" placeholder="First name" required />
+        <label for="sobrenome"><strong>- Sobrenome:</strong></label>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Last Name" required />
+    </div>
+    <br />
+    <div>
+        <label for="email"><strong> Email:</strong></label>
+        <input type="email" name="email" id="email" placeholder= "Digite seu Email" required />
+        <label for="p"><strong>- Password:</strong> </label>
+        <input type="Password" name="p" id="p" placeholder="Digite sua Senha" required />
+      <br />
+      <label for="nascimento"><strong>Data de Nascimento</strong></label>
+        <input type="date" name="nascimento" id="nascimento" placeholder="DD/MM/YYYY" required/>
+        <label for="Foto"><strong>Foto:</strong></label>
+        <input type="file" name="foto" id="foto"/>
+    </div>
+    <div>
+        <label for="nacionalidade"><strong>Nacionalidade</strong></label>
+        <select name="nacionalidade" id="nacionalidade" required>
+          <option value="russian">Russa</option>
+          <option value="american">Americano</option>
+          <option value="brasilian">Brasileiro</option> 
+        </select>
+
+        - Gênero:
+        <label for="female">F</label>
+        <input type="radio" name="gender" id="female" value="female"></imput>
+        <label for="male">M</label>
+        <input type="radio" name="gender" id="male" value="male"></imput>        
+      </form>
+    </div>
+    <div>
+      Suas Principais Qualidades:
+      <label for="inteligencia">Inteligência</label>
+      <input type="checkbox" name="inteligencia" id="inteligencia"> |
+      <label for="inteligencia">Resiliência</label>
+      <input type="checkbox" name="inteligencia" id="inteligencia"> |
+      <label for="inteligencia">Preparo Físico</label>
+      <input type="checkbox" name="inteligencia" id="inteligencia"> |
+      <label for="inteligencia">Educação</label>
+      <input type="checkbox" name="inteligencia" id="inteligencia"> |
+    </div>
+    <div>
+      <label for="comentario">Fale Sobre Você:</label>
+      <br>
+      <textarea name="comentario" id="comentario" ></textarea>
+    </div>
+    <div>
+      <input type="submit" value="criar">
+    </div>
+  </body>
+</html>
